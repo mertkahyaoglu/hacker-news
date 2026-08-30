@@ -44,14 +44,14 @@ body {
 .header-content {
     max-width: 1000px;
     margin: 0 auto;
-    padding: 1.5rem 1.5rem;
+    padding: 1rem 1.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .logo {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 700;
     color: var(--accent);
     letter-spacing: -0.5px;
@@ -65,11 +65,11 @@ body {
 .nav-link {
     color: var(--text-secondary);
     text-decoration: none;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     font-weight: 500;
     transition: var(--transition);
     position: relative;
-    padding-bottom: 0.5rem;
+    padding-bottom: 0.4rem;
 }
 
 .nav-link:hover,
@@ -99,50 +99,50 @@ body {
 /* Main Content */
 .main {
     flex: 1;
-    padding: 2rem 1.5rem;
+    padding: 1.25rem 1.5rem;
 }
 
 .stories-container {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 0.75rem;
 }
 
 /* Story Card */
 .story-card {
     background-color: var(--bg-secondary);
     border: 1px solid var(--border-color);
-    border-radius: 8px;
-    padding: 1.5rem;
+    border-radius: 6px;
+    padding: 0.85rem 1rem;
     transition: var(--transition);
     cursor: pointer;
     display: flex;
     flex-direction: column;
-    gap: 0.75rem;
+    gap: 0.4rem;
 }
 
 .story-card:hover {
     background-color: var(--bg-tertiary);
     border-color: var(--accent);
-    transform: translateY(-2px);
+    transform: translateY(-1px);
     box-shadow: 0 4px 12px rgba(255, 102, 0, 0.1);
 }
 
 .story-rank {
     display: inline-block;
-    font-size: 0.75rem;
+    font-size: 0.65rem;
     font-weight: 700;
     color: var(--text-tertiary);
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
     width: fit-content;
 }
 
 .story-title {
-    font-size: 1.15rem;
+    font-size: 0.95rem;
     font-weight: 600;
     color: var(--text-primary);
-    line-height: 1.4;
+    line-height: 1.35;
     transition: var(--transition);
 }
 
@@ -151,24 +151,25 @@ body {
 }
 
 .story-url {
-    font-size: 0.85rem;
+    font-size: 0.75rem;
     color: var(--text-tertiary);
     word-break: break-all;
+    margin-top: -0.2rem;
 }
 
 .story-meta {
     display: flex;
     flex-wrap: wrap;
-    gap: 1.5rem;
-    font-size: 0.85rem;
+    gap: 1rem;
+    font-size: 0.75rem;
     color: var(--text-secondary);
-    margin-top: 0.5rem;
+    margin-top: 0.2rem;
 }
 
 .meta-item {
     display: flex;
     align-items: center;
-    gap: 0.4rem;
+    gap: 0.3rem;
 }
 
 .meta-item strong {
@@ -177,18 +178,18 @@ body {
 
 .story-actions {
     display: flex;
-    gap: 1rem;
-    margin-top: 0.5rem;
+    gap: 0.75rem;
+    margin-top: 0.3rem;
 }
 
 .action-btn {
     background: none;
     border: none;
     color: var(--text-secondary);
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     cursor: pointer;
-    padding: 0.25rem 0.5rem;
-    border-radius: 4px;
+    padding: 0.2rem 0.4rem;
+    border-radius: 3px;
     transition: var(--transition);
     text-decoration: none;
 }
@@ -203,7 +204,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 3rem;
+    padding: 2rem;
 }
 
 .spinner {
@@ -337,14 +338,14 @@ body {
 .footer {
     background-color: var(--bg-secondary);
     border-top: 1px solid var(--border-color);
-    padding: 2rem 1.5rem;
+    padding: 1.5rem 1.5rem;
     text-align: center;
     color: var(--text-secondary);
-    font-size: 0.85rem;
+    font-size: 0.8rem;
 }
 
 .footer p {
-    margin: 0.5rem 0;
+    margin: 0.3rem 0;
 }
 
 .footer a {
@@ -361,7 +362,7 @@ body {
 /* Empty State */
 .empty-state {
     text-align: center;
-    padding: 3rem 1.5rem;
+    padding: 2rem 1.5rem;
     color: var(--text-secondary);
 }
 
@@ -374,7 +375,7 @@ body {
 @media (max-width: 768px) {
     .header-content {
         flex-direction: column;
-        gap: 1.5rem;
+        gap: 1rem;
         text-align: center;
     }
 
@@ -383,15 +384,15 @@ body {
     }
 
     .story-card {
-        padding: 1rem;
+        padding: 0.75rem 0.9rem;
     }
 
     .story-title {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 
     .story-meta {
-        gap: 1rem;
+        gap: 0.8rem;
     }
 
     .modal-content {
@@ -405,28 +406,37 @@ body {
 
 @media (max-width: 480px) {
     .header-content {
-        padding: 1rem 1rem;
+        padding: 0.75rem 1rem;
     }
 
     .logo {
-        font-size: 1.25rem;
+        font-size: 1rem;
     }
 
     .nav {
         gap: 1rem;
-        font-size: 0.85rem;
+        font-size: 0.8rem;
     }
 
     .main {
-        padding: 1rem;
+        padding: 0.75rem 1rem;
     }
 
     .stories-container {
-        gap: 1rem;
+        gap: 0.6rem;
+    }
+
+    .story-card {
+        padding: 0.7rem 0.8rem;
+    }
+
+    .story-title {
+        font-size: 0.85rem;
     }
 
     .story-meta {
         flex-direction: column;
-        gap: 0.5rem;
+        gap: 0.4rem;
+        font-size: 0.7rem;
     }
 }

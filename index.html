@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Hacker News</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <h1 class="logo">⚡ HN Dark</h1>
+                <nav class="nav">
+                    <a href="#" class="nav-link active" data-category="top">Top</a>
+                    <a href="#" class="nav-link" data-category="new">New</a>
+                    <a href="#" class="nav-link" data-category="best">Best</a>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main">
+            <!-- Stories List -->
+            <div class="stories-container" id="storiesContainer">
+                <!-- Stories will be loaded here -->
+            </div>
+
+            <!-- Loading indicator -->
+            <div class="loading" id="loadingIndicator">
+                <div class="spinner"></div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>A minimal dark theme Hacker News client</p>
+            <p><a href="https://news.ycombinator.com" target="_blank">Original HN</a></p>
+        </footer>
+    </div>
+
+    <!-- Story Modal -->
+    <div class="modal" id="storyModal">
+        <div class="modal-content">
+            <button class="modal-close" id="closeModal">&times;</button>
+            <div class="modal-body" id="modalBody"></div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
